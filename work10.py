@@ -1,9 +1,9 @@
 """
-25/11/2024
+27/11/2024
 
 Dasturlash asoslari
 
-#09-dars: if-elif-else
+#10-dars: Xatolar
 
 Muallif: Umirshikov Samandar
 
@@ -11,10 +11,10 @@ Muallif: Umirshikov Samandar
 
 son = float(input("Juft son kiriting: "))
 if son%2!=0:
-    print('Bu son juft emas.')
+    print("Bu son juft emas.")
 else:
     print("Rahmat!")
-
+    
 yosh = int(input("Yoshingiz nechida?"))
 
 if yosh<=4 or yosh>=60:
@@ -33,25 +33,24 @@ if x==y:
 elif x<y:
     print(f"{x}<{y}")
 else:
-    print(f"{x}>{y}")    
-    
+    print(f"{x}>{y}")
 
 mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
                'kartoshka', 'olma', 'banan', 'uzum', 'qovun']
-
 
 savat = []
 for n in range(5):
     savat.append(input(f"Savatga {n+1}-mahsulotni qo'shing: "))
 
-
-for mahsulot in savat:
-    if mahsulot in mahsulotlar:
-        print(f"Do'konimizda {mahsulot} bor")
-    else:
-        print(f"Do'konimizda {mahsulot} yo'q")    
-
-
+if savat:
+    for mahsulot in savat:
+        if mahsulot in mahsulotlar:
+            print(f"Do'konimizda {mahsulot} bor")
+        else:
+            print(f"Do'konimizda {mahsulot} yo'q")
+else: 
+    print("Savatingiz bo'sh") 
+    
 mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
                'kartoshka', 'olma', 'banan', 'uzum', 'qovun']
 
@@ -69,33 +68,27 @@ for mahsulot in savat:
         mavjud_emas.append(mahsulot)
 
 if mavjud_emas:
-  print(f"Do'konimizda quyidagi mahsulotlar yo'q:")
+  print("Do'konimizda quyidagi mahsulotlar yo'q:")
   for mahsulot in mavjud_emas:
-      print(mahsulot)
+    print(mahsulot)
 else:
   print("Siz so'ragan barcha mahsulotlar do'konimizda bor")    
     
-  
-users = ['alisher','aziza','yasina','umar']
+users = ['alisher1983','aziza','yasina','umar']
 
 login = input("Yangi login tanlang: ")
 
 if login in users:
-    print('Login band, yangi login tanlang!')
+    print('Login band, yangi login tanalng!')
 else:
-    print(f"Xush kelibsiz, {login.title()}!")    
-    
+    print("Xush kelibsiz!")
+
 son = int(input("Istalgan butun son kiriting: "))
 
 for n in range(2,11):
     if not (son%n):
-        print(f"{son} soni {n} ga qoldiqsiz bo'linadi")    
-    
-    
-    
-    
-    
-    
+        print(f"{son} soni {n} ga qoldiqsiz bo'linadi")
+
     
     
     
